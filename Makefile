@@ -51,8 +51,4 @@ git-status: ## require status is clean so we can use undo_edits to put things ba
 		exit 1; \
 	fi
 
-
-rebase: git-status ## rebase current feature branch on to the default branch
-	git fetch && git rebase origin/$(DEFAULT_BRANCH)
-
 .PHONY: build static test artifact	

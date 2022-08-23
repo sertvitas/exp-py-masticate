@@ -1,21 +1,32 @@
 import requests
 
-api_key = "redacted"
+API_KEY = "redacted"
 
-city = "Townsend"
-state = "MA"
-country = "US"
+CITY = "Townsend"
+STATE = "MA"
+COUNTRY = "US"
 
-lat = "42.7129142"
-long = "-71.7385216"
+LAT = "42.7129142"
+LONG = "-71.7385216"
 
-## url = "http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&appid="+api_key+"&units=imperial"
+## URL = "http://api.openweathermap.org/data/2.5/weather?LAT="+LAT+"&lon="+LONG+"&appid="+API_KEY+"&units=imperial" # pylint: disable=line-too-long
 
-url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "," + state + "," + country + "&appid=" + api_key + "&units=imperial"
 
-print(url)
+URL = (
+    "http://api.openweathermap.org/data/2.5/weather?q="
+    + CITY
+    + ","
+    + STATE
+    + ","
+    + COUNTRY
+    + "&appid="
+    + API_KEY
+    + "&units=imperial"
+)
 
-request = requests.get(url)
+print(URL)
+
+request = requests.get(URL)
 json = request.json()
 
 # print(json)
@@ -31,4 +42,4 @@ humidity = json.get("main").get("humidity")
 
 print("The temperature is", temp)
 print("The low temperature will be", temp_min, "with a high of", temp_max)
-print("Relative humidity of", humidity, "percent")
+print("ReLATive humidity of", humidity, "percent")

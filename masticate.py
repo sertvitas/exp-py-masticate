@@ -10,4 +10,4 @@ print(sys.executable)
 print("Path to python sys prefix")
 print(sys.prefix)
 
-print(boto3.client('sts').get_caller_identity().get('Account'))
+print(boto3.client("sts").get_caller_identity().get("Account"))

@@ -1,4 +1,4 @@
 amount = 200
-tax = .07
-total = amount + amount*tax
-print (total)
+tax = 0.07
+total = amount + amount * tax
+print(total)

@@ -12,4 +12,4 @@ for i in range(num_expenses):
 
 total = sum(expenses)
 
-print("You spent $", total, sep='')
+print("You spent $", total, sep="")

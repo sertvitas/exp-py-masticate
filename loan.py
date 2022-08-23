@@ -27,5 +27,5 @@ for i in range(months):
 
     # print results after this month
 
-    print("Paid", payment, "of which", interest, "was interest.", end=' ')
+    print("Paid", payment, "of which", interest, "was interest.", end=" ")
     print("Now I owe", principal)

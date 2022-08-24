@@ -1,3 +1,5 @@
+"""cehcking versions/path/etc"""
+
 import sys
 import boto3
 

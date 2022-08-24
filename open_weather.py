@@ -1,3 +1,4 @@
+"""simple api call to openweather"""
 import requests
 
 API_KEY = "redacted"

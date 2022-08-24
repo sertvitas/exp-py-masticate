@@ -1,3 +1,5 @@
+"""simple interest accrual"""
+
 # get loan details
 
 principal = float(input("How much principal is outstanding?\n"))  # 50,000

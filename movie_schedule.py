@@ -1,4 +1,5 @@
-from multiprocessing import current_process
+"""list operations"""
+##from multiprocessing import current_process
 
 current_movies = {
     "The Grinch": "11am",
@@ -12,7 +13,7 @@ for key in current_movies:
 movie = input("Which movie do you want the showtime for?\n")
 
 showtime = current_movies.get(movie)
-if showtime == None:
+if showtime is None:
     print("The requested movie isn't playing currently")
 else:
     print(movie, "is playing at", showtime)

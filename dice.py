@@ -1,3 +1,4 @@
+"""simple random usage"""
 import random
 
 roll = random.randint(1, 6)

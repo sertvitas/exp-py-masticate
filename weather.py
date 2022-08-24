@@ -1,12 +1,13 @@
-temperature = 55
-forecast = str("rain")
+"""weather actions"""
+TEMPERATURE = 55
+FORECAST = str("rain")
 
-if temperature > 80:
+if TEMPERATURE > 80:
     print("It's too hot")
     print("Stay indoors")
-elif temperature < 60 and forecast == "rain":
+elif TEMPERATURE < 60 and FORECAST == "rain":
     print("That rain makes for hypothermia weather...")
-elif temperature < 60:
+elif TEMPERATURE < 60:
     print("Bit chilly")
     print("Stay in")
 else:

@@ -1,3 +1,4 @@
+"""rock-paper-scissors"""
 import random
 
 computer_choice = random.choice(["scissors", "rock", "paper"])

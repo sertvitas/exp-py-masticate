@@ -30,7 +30,7 @@ print(URL)
 request = requests.get(URL)
 json = request.json()
 
-# print(json)
+#print(json)
 
 description = json.get("weather")[0].get("description")
 
